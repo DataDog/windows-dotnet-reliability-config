@@ -1,0 +1,24 @@
+init_config:
+instances:
+    - countersetname: Process
+      metrics:
+        - ['Private Bytes', perf.pdh.process.privateBytes, gauge]
+      
+    - countersetname: '.NET CLR Memory'
+      metrics:
+        - ['# Bytes in all Heaps', perf.pdh.clrMemory.bytesInAllHeaps, gauge]
+        - ['# Gen 0 Collections', perf.pdh.clrMemory.gen0Collections, gauge]
+        - ['# Gen 1 Collections', perf.pdh.clrMemory.gen1Collections, gauge]
+        - ['# Gen 2 Collections', perf.pdh.clrMemory.gen2Collections, gauge]
+        - ['Gen 0 heap size', perf.pdh.clrMemory.gen0HeapSize, gauge]
+        - ['Gen 1 heap size', perf.pdh.clrMemory.gen1HeapSize, gauge]
+        - ['Gen 2 heap size', perf.pdh.clrMemory.gen2HeapSize, gauge]
+        - ['Large Object Heap size', perf.pdh.clrMemory.largeObjectHeapSize, gauge]
+      
+    - countersetname: '.NET CLR LocksAndThreads'
+      metrics:
+        - ['Contention Rate / sec', perf.pdh.clrLocksAndThreads.contentionRatePerSec, gauge]
+        
+    - countersetname: 'ASP.NET'
+      metrics:
+        - ['Request Execution Time', perf.pdh.aspNet.requestExecutionTime, gauge]
