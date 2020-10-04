@@ -14,11 +14,19 @@ instances:
         - ['Gen 1 heap size', perf.pdh.clrMemory.gen1HeapSize, gauge]
         - ['Gen 2 heap size', perf.pdh.clrMemory.gen2HeapSize, gauge]
         - ['Large Object Heap size', perf.pdh.clrMemory.largeObjectHeapSize, gauge]
+        - ['% Time in GC', perf.pdh.clrMemory.PercentTimeInGC, gauge]
       
     - countersetname: '.NET CLR LocksAndThreads'
       metrics:
         - ['Contention Rate / sec', perf.pdh.clrLocksAndThreads.contentionRatePerSec, gauge]
-        
+        - ['# of current logical Threads', perf.pdh.clrLocksAndThreads.CurrentLogicalThreads, gauge]
+        - ['# of current physical Threads', perf.pdh.clrLocksAndThreads.CurrentPhysicalThreads, gauge]
+      
     - countersetname: 'ASP.NET'
       metrics:
         - ['Request Execution Time', perf.pdh.aspNet.requestExecutionTime, gauge]
+      
+    - countersetname: 'ASP.NET Applications'
+      metrics:
+        - ['Requests Executing', perf.pdh.AspNetApplications.RequestsExecuting, gauge]
+        - ['Requests/Sec', perf.pdh.AspNetApplications.RequestsPerSec, gauge]
