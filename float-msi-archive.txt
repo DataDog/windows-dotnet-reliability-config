@@ -1,1 +1,1 @@
-https://github.com/DataDog/dd-trace-dotnet/releases/download/v1.19.4/datadog-dotnet-apm-1.19.4-x64.msi
+https://github.com/DataDog/dd-trace-dotnet/releases/download/v1.19.6-prerelease/datadog-dotnet-apm-1.19.6-prerelease-x64.msi
