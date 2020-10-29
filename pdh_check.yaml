@@ -30,3 +30,7 @@ instances:
       metrics:
         - ['Requests Executing', perf.pdh.AspNetApplications.RequestsExecuting, gauge]
         - ['Requests/Sec', perf.pdh.AspNetApplications.RequestsPerSec, gauge]
+      
+    - countersetname: '.NET CLR Exceptions'
+      metrics:
+        - ['# of Exceps Thrown', perf.pdh.NETCLRExceptions.NumberExceptionsThrown, gauge]
