@@ -33,4 +33,5 @@ instances:
       
     - countersetname: '.NET CLR Exceptions'
       metrics:
-        - ['# of Exceps Thrown', perf.pdh.NETCLRExceptions.NumberExceptionsThrown, gauge]
+        - ['# of Exceps Thrown', perf.pdh.clrExceptions.NumberExceptionsThrown, gauge]
+        - ['# of Exceps Thrown / sec', perf.pdh.clrExceptions.NumberExceptionsThrownPerSecond, gauge]
