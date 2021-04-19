@@ -1,0 +1,1 @@
+https://s3.amazonaws.com/ddagent-windows-stable/datadog-agent-7-latest.amd64.msi
